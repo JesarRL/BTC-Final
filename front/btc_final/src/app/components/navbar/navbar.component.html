@@ -1,0 +1,79 @@
+<nav class="navbar-btc navbar sticky-top blurred">
+  <div
+    class="container-fluid d-flex align-items-center justify-content-between align-items-center navbar-css px-5 sticky-top">
+    <i class="d-block fa-solid fa-bars boton-menu-barras" data-bs-toggle="offcanvas" href="#offcanvasExample"
+      role="button" aria-controls="offcanvasExample"></i>
+    <a href="Index.html"><img src="Assets/Img/Logo4.png" class="imagen-nav"></a>
+    <i class="d-block fa-regular fa-user boton-inicio-sesion" data-bs-toggle="offcanvas" href="#inicioSesion"
+      role="button" aria-controls="offcanvasRight"></i>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start despliegue-menu" tabindex="-1" id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel">
+  <i class="fa-solid fa-xmark boton-cerrar-menu" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+  <ul class="text-white d-flex flex-column justify-content-between me-5">
+    <a href="Index.html">
+      <li class="ps-3">Inicio</li>
+    </a>
+    <a href="catalogo.html">
+      <li class="ps-3">Catalogo</li>
+    </a>
+    <a href="comparativa.html">
+      <li class="ps-3">Comparativa</li>
+    </a>
+    <a href="nosotros.html">
+      <li class="ps-3">Nosotros</li>
+    </a>
+    <a href="encuentranos.html">
+      <li class="ps-3">Encuentranos</li>
+    </a>
+    <a href="preguntas.html">
+      <li class="ps-3">Preguntas</li>
+    </a>
+  </ul>
+</div>
+
+<div class="desplegable-secundario position-absolute sticky-bottom">
+  <ul class="lista-segundo-menu">
+    <li><a class="link-gasolina" href="gasolina.html"> Gasolina </a></li>
+    <li><a class="link-diesel" href="diesel.html"> Diesel </a></li>
+    <li><a class="link-electrico" href="electrico.html"> Electrico </a></li>
+  </ul>
+</div>
+
+<div class="offcanvas offcanvas-end despliegue-usuario" tabindex="-1" id="inicioSesion"
+  aria-labelledby="offcanvasRightLabel">
+  <div class="contenedor-login">
+    <i class="fa-solid fa-xmark boton-cerrar-login" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+  </div>
+  <div class="d-flex justify-content-center mt-0 flex-column align-items-center contenedor-inputs">
+    <a href="Index.html"><img src="Assets/Img/Logo4.png" class="imagen-nav imagen-nav-login"></a>
+    <p class="fs-2 mt-2 mb-2 text-white">Iniciar Sesión</p>
+    <div class="input1">
+      <i class="fa-solid fa-user text-white"></i>
+      <input type="text" placeholder="Usuario o correo">
+    </div>
+    <div class="mt-4 input2">
+      <i class="fa-solid fa-lock text-white"></i>
+      <input type="password" placeholder="Contraseña">
+    </div>
+    <div class="d-flex align-items-center justify-content-evenly div-check mt-3 w-100">
+      <div class="align-items-center div-checkbox">
+        <input type="checkbox" class="check m-0" id="opt-in" />
+        <label for="opt-in" class="ms-0">Recuerdame</label>
+      </div>
+
+      <div class="d-flex mt-0 fs-6 div-olvidaste-clave">
+        <a href="">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+
+    <div class="d-flex w-100 justify-content-center mt-3">
+      <button class="boton-login fs-3 text-white">Iniciar Sesión</button>
+    </div>
+    <div class="d-flex w-100 justify-content-center mt-3">
+      <button class="boton-registro fs-3 fw-medium">Registrarse</button>
+    </div>
+  </div>
+</div>
