@@ -1,0 +1,23 @@
+.titulo-footer{
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+
+}
+
+.bloque-enlaces-footer{
+  margin-left:20px;
+  margin-top: 30px;
+}
+
+.bloque-enlaces-footer a{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.contenedor-redes i{
+width: 75%;
+color: white;
+}
