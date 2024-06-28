@@ -1,18 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-  --color-principal: #516343;
-  --color-fondo-body: #AAC0A5;
-  --color-navbar: #4D5F3E;
-  --color-texto: #c9c9c9;
-  --color-logo: #FFF;
-  --color-auxiliar:#000000;
-  --color-oscuro-hover: #35412c;
-
-
   --color-background-body: background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(83,83,83,1) 100%);;
   --color-azul-principal: #000d72;
   --color-azul-oscuro: #000B59;
   --color-gris-oscuro: #1D1D1D;
   --color-gris-claro: #3f3f3f;
+}
+
+
+body{
+  background-color: var(--color-gris-oscuro) !important;
 }
