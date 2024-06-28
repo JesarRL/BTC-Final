@@ -39,30 +39,6 @@
   padding-top: 60px;
 }
 
-/** Footer **/
-
-.titulo-footer{
-  margin-top: 90px;
-  margin-left: 20px;
-  border: none;
-  border-bottom: 2px solid var(--color-auxiliar);
-
-}
-
-.bloque-enlaces-footer{
-  margin-left:20px;
-  margin-top: 30px;
-}
-
-.bloque-enlaces-footer a{
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-
-.contenedor-redes i{
-width: 75%;
-}
-
 /** Side bar Menu desplegable **/
 
 .boton-menu-barras{
@@ -163,7 +139,7 @@ width: 75%;
 
 .despliegue-menu a:hover{
   background-color: transparent;
-  border: 2.5px var(--color-azul-principal) solid;
+  border: 2.5px white solid;
   transition: all 0.5s;
 }
 
@@ -171,7 +147,7 @@ width: 75%;
   margin: 39px 0 0 43px ;
   font-size: 40px;
   padding: 0px 10px;
-  color: var(--color-logo);
+  color: white;
   border: 2.5px solid transparent;
   border-radius: 10px;
   max-width: 13.2%;
@@ -179,7 +155,7 @@ width: 75%;
 
 .boton-cerrar-menu:hover{
   background-color: transparent;
-  border: 2.5px solid var(--color-azul-principal);
+  border: 2.5px solid white;
   transition: all 0.5s;
   cursor: pointer;
 }
