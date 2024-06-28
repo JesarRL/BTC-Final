@@ -3,7 +3,7 @@
     class="container-fluid d-flex align-items-center justify-content-between align-items-center navbar-css px-5 sticky-top">
     <i class="d-block fa-solid fa-bars boton-menu-barras" data-bs-toggle="offcanvas" href="#offcanvasExample"
       role="button" aria-controls="offcanvasExample"></i>
-    <a href="Index.html"><img src="/Img/Logo4.png" class="imagen-nav"></a>
+    <a routerLink="/Inicio"><img src="/Img/Logo4.png" class="imagen-nav"></a>
     <i class="d-block fa-regular fa-user boton-inicio-sesion" data-bs-toggle="offcanvas" href="#inicioSesion"
       role="button" aria-controls="offcanvasRight"></i>
   </div>
@@ -13,9 +13,9 @@
   aria-labelledby="offcanvasExampleLabel">
   <i class="fa-solid fa-xmark boton-cerrar-menu" data-bs-dismiss="offcanvas" aria-label="Close"></i>
   <ul class="text-white d-flex flex-column justify-content-between me-5">
-    <div href="Index.html">
+    <a routerLink="/Inicio">
       <li class="ps-3">Inicio</li>
-    </div>
+    </a>
     <a href="catalogo.html">
       <li class="ps-3">Catalogo</li>
     </a>
