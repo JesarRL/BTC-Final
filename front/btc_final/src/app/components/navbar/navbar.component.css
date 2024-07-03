@@ -6,11 +6,11 @@
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--color-azul-principal);
-  padding: 20px 0 23px 0;
+  padding: 10px 0 10px 0;
 }
 
 .imagen-nav{
-  height: 60px;
+  height: 50px;
   opacity: 100%;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 /** Side bar Menu desplegable **/
@@ -73,7 +73,7 @@
 }
 
 .despliegue-menu li{
-  font-size: 37px;
+  font-size: 26px;
   list-style-type: none;
   color: var(--color-logo);
 }
