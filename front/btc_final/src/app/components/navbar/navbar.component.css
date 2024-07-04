@@ -42,7 +42,7 @@
 /** Side bar Menu desplegable **/
 
 .boton-menu-barras{
-  color: var(--color-logo);
+  color: white;
   font-size: 35px;
   border: 2px solid transparent;
   border-radius: 10px;
