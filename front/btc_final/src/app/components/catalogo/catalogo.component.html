@@ -1,7 +1,6 @@
 <header>
     <div class="cabecera-catalogo d-flex justify-content-center align-content-center">
         <h1>Catálogo</h1>
-
     </div>
 </header>
 
@@ -13,67 +12,34 @@
         <div class="textoCamionetasGasolina">
             <span class="text-white mb-3">Camionetas Gasolina</span>
         </div>
-        <div id="carruselGasolina" class="carousel slide">
-            <div class="carousel-indicators carruselIndicadores">
-                <button type="button" data-bs-target="#carruselGasolina" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carruselGasolina" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carruselGasolina" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+        <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        @for (item of dataVehiculos_slider1_gasolina; track item._id) {
-                            <div class="card cartaCarrusel">
-                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
-                                    <div class="d-flex flex-column">
-                                        <button class="mb-2 botonDetallesCarrusel">Ver detalles</button>
-                                        <button class="botonCompararCarrusel">Comparar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
+                    <div class="contenedor bg-white d-flex">
+                        <img src="https://placehold.co/430x430" class="d-block" alt="..." />
+                        <div>
+                            <h2>Nombre Camioneta</h2>
+                            <p>Modelo</p>
+                            <p>Combustible</p>
+                            <p>Modelo</p>
+                            <p>Combustible</p>
+                            <p>Modelo</p>
+                            <p>Combustible</p>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        @for (item of dataVehiculos_slider2_gasolina; track item._id) {
-                            <div class="card cartaCarrusel">
-                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
-                                    <div class="d-flex flex-column">
-                                        <button class="mb-2 botonDetallesCarrusel" (click)="pepe()">Ver detallsses</button>
-                                        <button class="botonCompararCarrusel">Comparar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
+                    <img src="https://placehold.co/200x200" class="d-block w-100" alt="..." />
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        @for (item of dataVehiculos_slider3_gasolina; track item._id) {
-                            <div class="card cartaCarrusel">
-                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
-                                    <div class="d-flex flex-column">
-                                        <button class="mb-2 botonDetallesCarrusel">Ver detalles</button>
-                                        <button class="botonCompararCarrusel">Comparar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
+                    <img src="https://placehold.co/200x200" class="d-block w-100" alt="..." />
                 </div>
             </div>
-            <button class="carousel-control-prev botonAnteriorCarrusel" type="button" data-bs-target="#carruselGasolina" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next botonSiguienteCarrusel" type="button" data-bs-target="#carruselGasolina" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -84,73 +50,8 @@
         <div class="textoCamionetasGasolina">
             <span class="text-white mb-3">Camionetas Diesel</span>
         </div>
-        <div id="carruselDiesel" class="carousel slide">
-            <div class="carousel-indicators carruselIndicadores">
-                <button type="button" data-bs-target="#carruselDiesel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carruselDiesel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carruselDiesel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        @for (item of dataVehiculos_slider1_diesel; track item._id) {
-                            <div class="card cartaCarrusel">
-                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
-                                    <div class="d-flex flex-column">
-                                        <button class="mb-2 botonDetallesCarrusel">Ver detalles</button>
-                                        <button class="botonCompararCarrusel">Comparar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        @for (item of dataVehiculos_slider2_diesel; track item._id) {
-                            <div class="card cartaCarrusel">
-                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title tituloCarrusel ">{{ item.marca }} {{ item.modelo}}</h5>
-                                    <div class="d-flex flex-column">
-                                        <button class="mb-2 botonDetallesCarrusel">Ver detalles</button>
-                                        <button class="botonCompararCarrusel">Comparar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        @for (item of dataVehiculos_slider3_diesel; track item._id) {
-                            <div class="card cartaCarrusel">
-                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
-                                    <div class="d-flex flex-column">
-                                        <button class="mb-2 botonDetallesCarrusel">Ver detalles</button>
-                                        <button class="botonCompararCarrusel">Comparar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev botonAnteriorCarrusel" type="button" data-bs-target="#carruselDiesel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next botonSiguienteCarrusel" type="button" data-bs-target="#carruselDiesel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </div>
     <div class="d-flex justify-content-center">
-        <span class="botonCatalogoCompleto">Ver el catalogo completo</span>
+        <span routerLink="/catalogo-completo" class="botonCatalogoCompleto">Ver el catalogo completo</span>
     </div>
 </section>
