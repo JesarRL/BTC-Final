@@ -1,9 +1,10 @@
 :root{
-
+    --color-texto-prueba: #c9c9c9;
     --color-background-body: background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(83,83,83,1) 100%);;
     --color-azul-principal: #000d72;
     --color-azul-oscuro: #000B59;
     --color-gris-oscuro: #1D1D1D;
     --color-gris-claro: #3f3f3f;
+
 }
