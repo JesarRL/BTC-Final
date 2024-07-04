@@ -39,8 +39,35 @@ exports.listarInventario = async (req, res) => {
     }
 }
 
+
+exports.listarInventario_x_gasolina = async (req, res) => {
+    try {
+        let camionetaData = await inventarioModel.find({combustible: "Gasolina"})
+        res.status(200).send({ camionetaData })
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({ message: "Error al listar los vehiculos" })
+    }
+}
+exports.listarInventario_x_diesel = async (req, res) => {
+    try {
+        let camionetaData = await inventarioModel.find({combustible: "Diesel"})
+        res.status(200).send({ camionetaData })
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({ message: "Error al listar los vehiculos" })
+    }
+}
+
 exports.buscarInventario = async (req, res) => {
-    res.send("esta camioneta es");
+    try {
+        console.log("🚀 ~ exports.buscarInventario= ~ req.params.busqueda:", req.params)
+        let camionetaData = await inventarioModel.find({_id: req.params.busqueda})
+        res.status(200).send({ camionetaData })
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({ message: "Error al listar los vehiculos" })
+    }
 }
 
 exports.actualizarInventario = (req, res) => {
