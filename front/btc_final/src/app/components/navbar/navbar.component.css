@@ -49,12 +49,12 @@
   padding: 5px 7px;
 }
 
+
+
 .boton-menu-barras:hover{
-  border: 2px solid var(--color-logo);
-  border-radius: 10px;
-  background-color: transparent;
-  transition: all 0.5s;
-}
+    border: 2px solid #fff;
+    transition: all 0.5s;
+  }
 
 .despliegue-menu{
   background-color: var(--color-gris-oscuro);
@@ -163,148 +163,148 @@
 /** Side bar inicio de sesion **/
 
 .despliegue-usuario{
-  background-color: var(--color-gris-oscuro);
+    background-color: var(--color-gris-oscuro);
 }
 
 .boton-inicio-sesion{
-  color: var(--color-logo);
-  font-size: 35px;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  padding: 5px 7px;
+    color: var(--color-logo);
+    font-size: 35px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px 7px;
 }
 
 .boton-inicio-sesion:hover{
-  border: 2px solid var(--color-logo);
-  border-radius: 10px;
-  background-color: transparent;
-  transition: all 0.5s;
+    border: 2px solid var(--color-logo);
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.5s;
 }
 
 .contenedor-login{
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
 .boton-cerrar-login{
-  font-size: 40px;
-  margin: 43px 60px 0 0;
-  padding: 0px 10px;
-  color: var(--color-logo);
-  border: 2px solid transparent;
-  border-radius: 10px;
-  max-width: 13.2%;
-  border: 2.5px solid transparent;
+    font-size: 40px;
+    margin: 43px 60px 0 0;
+    padding: 0px 10px;
+    color: var(--color-logo);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    max-width: 13.2%;
+    border: 2.5px solid transparent;
 }
 
 .boton-cerrar-login:hover{
-  background-color: transparent;
-  border: 2.5px solid var(--color-azul-principal);
-  transition: all 0.5s;
-  cursor: pointer;
+    background-color: transparent;
+    border: 2.5px solid var(--color-azul-principal);
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .imagen-nav-login{
-  height: 80px;
+    height: 80px;
 }
 .contenedor-inputs{
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .contenedor-inputs input{
-  background-color: transparent;
-  border: none;
-  color: var(--color-logo);
-  padding-left: 6px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-logo);
+    padding-left: 6px;
 }
 
 .input1::after {
-  content: ''; /* Pseudo-elemento para crear la línea */
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-logo); /* Color de la línea */
-  margin-top: 3px; /* Desplazar la línea hacia abajo */
+    content: ''; /* Pseudo-elemento para crear la línea */
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff; /* Color de la línea */
+    margin-top: 3px; /* Desplazar la línea hacia abajo */
 }
 
 .input2::after {
-  content: ''; /* Pseudo-elemento para crear la línea */
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-logo); /* Color de la línea */
-  margin-top: 3px; /* Desplazar la línea hacia abajo */
+    content: ''; /* Pseudo-elemento para crear la línea */
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff; /* Color de la línea */
+    margin-top: 3px; /* Desplazar la línea hacia abajo */
 }
 
 .contenedor-inputs input::placeholder{
-  color: var(--color-logo);
-  border: none;
+    color: var(--color-logo);
+    border: none;
 }
 
 .contenedor-inputs input:focus{
-  outline: none;
-  background-color: var(--color-gris-claro);
-  transition: all 0.5s;
+    outline: none;
+    background-color: var(--color-gris-claro);
+    transition: all 0.5s;
 }
 
 .div-check{
-  color: var(--color-logo);
+    color: var(--color-logo);
 
 }
 
 .div-checkbox{
-  margin-bottom: 4.5px;
+    margin-bottom: 4.5px;
 }
 
 .div-checkbox label{
-  font-size: 19px;
+    font-size: 19px;
 }
 
 .check{
-  transform: scale(1.3) translateX(2px);
+    transform: scale(1.3) translateX(2px);
 
 }
 
 .div-olvidaste-clave a{
-  text-decoration: none;
-  color: var(--color-logo);
-  border-bottom: solid 1px transparent;
+    text-decoration: none;
+    color: var(--color-logo);
+    border-bottom: solid 1px transparent;
 
 }
 
 .div-olvidaste-clave a:hover{
-  border-bottom: solid 1px var(--color-logo);
-  transition: all 0.5s;
+    border-bottom: solid 1px var(--color-logo);
+    transition: all 0.5s;
 
 }
 
 .boton-login{
-  background-color: var(--color-azul-principal);
-  width: 80.5%;
-  border: solid 1px var(--color-logo);
-  height: 60px;
-  border-radius: 10px;
+    background-color: var(--color-azul-principal);
+    width: 80.5%;
+    border: solid 1px var(--color-logo);
+    height: 60px;
+    border-radius: 10px;
 }
 
 .boton-login:hover{
-  border: 1px solid var(--color-logo);
-  background-color: var(--color-azul-oscuro);
-  transition: all 0.5s;
+    border: 1px solid var(--color-logo);
+    background-color: var(--color-azul-oscuro);
+    transition: all 0.5s;
 }
 
 .boton-registro{
-  color: var(--color-azul-principal);
-  background-color: var(--color-logo);
-  width: 80.5%;
-  border: solid 1px var(--color-logo);
-  height: 50px;
-  border-radius: 10px;
-  text-align: center
+    color: var(--color-azul-principal);
+    background-color: var(--color-logo);
+    width: 80.5%;
+    border: solid 1px var(--color-logo);
+    height: 50px;
+    border-radius: 10px;
+    text-align: center
 }
 
 .boton-registro:hover{
-  border: 1px solid var(--color-logo);
-  color: var(--color-logo);
-  background-color: var(--color-azul-oscuro);
-  transition: all 0.5s;
+    border: 1px solid var(--color-logo);
+    color: var(--color-logo);
+    background-color: var(--color-azul-oscuro);
+    transition: all 0.5s;
 }

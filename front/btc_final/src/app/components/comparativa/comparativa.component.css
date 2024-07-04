@@ -1,0 +1,49 @@
+.contenedor-comparativa{
+  border-top: 2px solid var(--color-azul-principal);
+  border-bottom: 2px solid var(--color-azul-principal);
+  background: rgb(37,37,37);
+  background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 51%, rgba(37,37,37,1) 100%);
+
+}
+
+.contenedor-opciones-comparativa{
+  background-color: var(--color-gris-oscuro);
+  border: 2px solid var(--color-azul-principal);
+}
+
+.contenedor-comparar-comparativa{
+  border-top: 2px solid var(--color-azul-principal);
+  border-bottom: 2px solid var(--color-azul-principal);
+  background-color: var(--color-azul-oscuro) !important;
+}
+
+.contenedor-seleccionar-comparativa {
+  position: relative;
+  padding: 20px 0px;
+}
+
+.contenedor-seleccionar-comparativa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 49.925%; /* Coloca la línea en el centro horizontal del contenedor */
+  border-left: 3px solid var(--color-logo);
+}
+
+.formulario-seleccionar-comparativa1{
+  transform: translateX(-30px)
+}
+
+.formulario-seleccionar-comparativa2{
+  transform: translateX(30px)
+}
+
+#btn-comparar{
+  background-color: purple;
+
+}
+
+#btn-comparar:hover{
+  cursor: pointer;
+}
