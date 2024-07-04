@@ -175,11 +175,10 @@
 }
 
 .boton-inicio-sesion:hover{
-    border: 2px solid var(--color-logo);
-    border-radius: 10px;
-    background-color: transparent;
+    border: 2px solid #fff;
     transition: all 0.5s;
 }
+
 
 .contenedor-login{
     display: flex;

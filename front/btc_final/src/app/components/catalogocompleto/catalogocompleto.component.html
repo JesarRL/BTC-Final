@@ -5,17 +5,18 @@
     <div class="contenedorImagenesCatalogo d-flex justify-content-between">
         @for (item of catalogo; track item._id) {
             <div class="card cartaCatalogoCompleto">
-                <img src="https://placehold.co/200x200"/>
+                <img src={{item.imagen}}/>
+
                 <div class="card-body d-flex flex-column justify-content-center">
                     <h5 class="card-title">{{ item.marca }} {{  item.modelo  }} </h5>
                     <p>Modelo: {{item.year}}</p>
                     <p>Combustible: {{item.combustible}}</p>
-                    <p>Cilindrada: {{item.cilindrada}}</p>
-                    <p>Potencia - Torque: {{item.potencia}} - {{item.torque}}</p>
+                    <p>Cilindrada: {{item.cilindrada}} c.c</p>
+                    <p>Potencia - Torque: {{item.potencia}} hp - {{item.torque}} Nm</p>
                     <p>Valvulas: {{item.valvulas}}</p>
-                    <p>Consumo promedio: {{item.consumo_promedio}}</p>
-                    <p>Dimensiones: {{item.dimensiones}}</p>
-                    <p>Precio: {{item.precio}} $USD</p>
+                    <p>Consumo promedio: {{item.consumo_promedio}} L/100Km</p>
+                    <p>Dimensiones: {{item.dimensiones}} (mm)</p>
+                    <p>Precio: {{item.precio}}$ USD</p>
 
                     <a routerLink="/comparativa" class="btn btn-warning boton">Comparativa</a>
                 </div>

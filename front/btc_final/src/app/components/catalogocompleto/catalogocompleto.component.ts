@@ -19,11 +19,13 @@ export class CatalogocompletoComponent {
         this.obtenerVehiculos()
     }
 
+
     obtenerVehiculos(){
         this._apiService.getCamionetas().subscribe((data: any) => {
 
             this.catalogo = data.camionetaData
             console.log("catalogo: ", this.catalogo)
+
         })
 
 
@@ -31,3 +33,5 @@ export class CatalogocompletoComponent {
 
 
 }
+
+

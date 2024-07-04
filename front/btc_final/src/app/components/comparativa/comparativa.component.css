@@ -54,6 +54,14 @@
 
     padding: 10px;
     border-radius: 20px;
+    height: 300px;
+    width: 450px;
 }
 
+.contenedor1{
+    margin-right: 5px;
+}
 
+.contenedor2{
+    margin-left: 5px;
+}
