@@ -1,17 +1,30 @@
-.formulario{
-border-radius: 2%;
+.formulario {
+    border-radius: 2%;
+    background-color: var(--color-gris-claro);
+    padding: 10px 30px;
+    width: 400px;
+    font-weight: 500;
 }
 
-img
-{
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-top: 200px;
-  width: 500px;
+img {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 200px;
+    width: 500px;
 }
 
 
-.imagen_preguntanos{
-  margin-left: 10px;
+.imagen_preguntanos {
+    margin-left: 10px;
 
+}
+
+.tituloPreguntas {
+    font-size: 20px;
+}
+
+input.inputNumber::-webkit-outer-spin-button,
+input.inputNumber::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

@@ -21,3 +21,16 @@
 width: 75%;
 color: white;
 }
+
+.footer{
+    font-size: 18px;
+}
+
+.footer2{
+    border-bottom: 2px solid transparent;
+}
+
+.footer2:hover{
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s;
+}

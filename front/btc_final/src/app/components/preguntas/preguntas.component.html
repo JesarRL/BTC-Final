@@ -1,57 +1,53 @@
-<section class=" seccion-cuestionario d-flex justify-content-between ms-5 my-4">
+<section class="seccion-cuestionario d-flex justify-content-between ms-5 my-4">
     <div class="d-flex justify-content-between">
         <div class="d-block align-items-center imagen_preguntanos">
-            <img src="/Img/Logo4.png" alt="">
+            <img src="/Img/Logo4.png" alt="" />
         </div>
-        <form
-            class="formulario d-block justify-content-end align-content-center bg-dark text-white fa-border-none ms-5">
-            <div class="mb-3 py-1">
-                <label for="exampleInputRazon" class="form-label"> Razón </label>
+
+
+
+        <form class="formulario d-flex flex-column justify-content-end align-content-center text-white ms-5">
+
+            <div class="tituloPreguntas text-center">
+                Dejanos tus datos y nos pondremos en contacto contigo lo antes posible.
+            </div>
+
+            <div class="mb-2 py-1">
+                <label for="exampleInputRazon" class="form-label">Razón</label>
                 <select name="" id="" class="form-control border-0 bg-light">
-                    <option selected> Seleccione:</option>
+                    <option selected>Seleccione:</option>
                     <option value="Negocios">Adquisicion de vehiculo</option>
                     <option value="Negocios">Negocios</option>
                     <option value="Negocios">Asesoria legal</option>
                     <option value="Negocios">Fallos con tu Usuario</option>
                     <option value="Negocios">Garantia</option>
+                    <option value="Negocios">Tengo una pregunta</option>
+                    <option value="Negocios">Otro...</option>
                 </select>
             </div>
-            <div class="mb-3 py-1">
-                <label for="exampleInputEmail1" class="form-label"> Correo
-                    electrónico</label>
-                <input type="email" class=" estilo-inputs form-control bg-light border-0 text-dark"
-                    id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            <div class="mb-2 py-1">
+                <label for="exampleInputNombreYApellido" class="form-label">Nombres y apellidos</label>
+                <input type="text" class="estilo-inputs form-control bg-light border-0 text-dark" id="exampleInputNombre" aria-describedby="NombreAyuda" />
             </div>
 
-            <div class="mb-3 py-1">
-                <label for="exampleInputNombreYApellido" class="form-label"> Nombres y apellidos </label>
-                <input type="text" class="estilo-inputs form-control bg-light border-0 text-dark"
-                    id="exampleInputNombre" aria-describedby="NombreAyuda">
+            <div class="mb-2 py-1">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="estilo-inputs form-control bg-light border-0 text-dark" id="exampleInputEmail1" aria-describedby="emailHelp" />
             </div>
 
-            <div class="mb-3 py-1">
-                <label for="exampleInputTitulo" class="form-label">Titulo</label>
-                <input type="text" class=" estilo-inputs form-control bg-light border-0 text-dark"
-                    id="exampleInputTitulo" aria-describedby="emailHelp">
+            <div class="mb-2 py-1">
+                <label for="exampleInputTelegono"  class="form-label">Telefono / Celular</label>
+
+                <input type="text" value="+57 " class="estilo-inputs form-control bg-light border-0 text-dark" id="exampleInputTelefono" />
             </div>
 
-
-            <div class="mb-3 py-1">
-                <label for="exampleInputTelegono" class="form-label"> Telefono </label>
-                <p> Incluye el indicativo de tu país (ejm: +57) </p>
-                <input type="text" class="estilo-inputs form-control bg-light border-0 text-dark"
-                    id="exampleInputTelefono">
+            <div class="mb-2 py-1">
+                <label for="exampleInputComentarios" class="form-label">Comentarios</label>
+                <textarea type="text" class="estilo-inputs form-control bg-light border-0 text-dark" data-tamano-area="tamano-area" id="exampleInputPassword1" placeholder="Añada por favor sus comentarios."></textarea>
             </div>
 
-            <div class="mb-3 py-1">
-                <label for="exampleInputComentarios" class="form-label"> Comentarios </label>
-                <textarea type="text" class="estilo-inputs form-control bg-light border-0 text-dark"
-                    data-tamano-area="tamano-area" id="exampleInputPassword1"
-                    placeholder="Añada por favor sus comentarios">
-              </textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary bg-light text-dark border-0 py-1 ">Submit</button>
+            <button type="submit" class="btn btn-primary boton mb-2">Enviar</button>
         </form>
     </div>
 </section>

@@ -13,6 +13,6 @@ export const routes: Routes = [
     { path: "comparativa", component: ComparativaComponent },
     { path: "catalogo", component: CatalogoComponent },
     { path: "catalogo-completo", component: CatalogocompletoComponent },
-    { path: "preguntas", component: PreguntasComponent }
+    { path: "contacto", component: PreguntasComponent }
 ];
 
