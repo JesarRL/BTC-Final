@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ProductoService } from '../../services/producto.service';
 
 @Component({
@@ -15,11 +15,12 @@ export class CatalogoComponent {
     dataVehiculos_slider2_gasolina: any = []
     dataVehiculos_slider3_gasolina: any = []
 
+
     dataVehiculos_slider1_diesel: any = []
     dataVehiculos_slider2_diesel: any = []
     dataVehiculos_slider3_diesel: any = []
 
-    constructor(private _apiService: ProductoService) { }
+    constructor(private _apiService: ProductoService, private router:Router) { }
 
     ngOnInit(): void {
         this.obtenerVehiculos("G")
@@ -39,16 +40,8 @@ export class CatalogoComponent {
             }
         })
     }
+    pepe(){
+        this.router.navigate(["/comparativa"])
+    }
 }
 
-let botonComparar:any =  document.querySelector(".botonCompararCarrusel")
-
-botonComparar?.addEventListener("click", ()=>{
-
-    window.location.href = "https://www.youtube.com/watch?v=24_vzTySZTQ&ab_channel=NeiserCustodio"
-})
-
-
-let botonPrueba:any = document.querySelector("#botonPrueba")
-
-console.log("boton consola: ", botonPrueba)
