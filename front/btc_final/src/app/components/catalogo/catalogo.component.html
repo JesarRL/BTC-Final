@@ -36,8 +36,38 @@
                         }
                     </div>
                 </div>
-
-
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        @for (item of dataVehiculos_slider2_gasolina; track item._id) {
+                            <div class="card cartaCarrusel">
+                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
+                                    <div class="d-flex flex-column">
+                                        <button class="mb-2 botonDetallesCarrusel" (click)="pepe()">Ver detallsses</button>
+                                        <button class="botonCompararCarrusel">Comparar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        @for (item of dataVehiculos_slider3_gasolina; track item._id) {
+                            <div class="card cartaCarrusel">
+                                <img src="https://placehold.co/200x200" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title tituloCarrusel">{{ item.marca }} {{ item.modelo}}</h5>
+                                    <div class="d-flex flex-column">
+                                        <button class="mb-2 botonDetallesCarrusel">Ver detalles</button>
+                                        <button class="botonCompararCarrusel">Comparar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
             </div>
             <button class="carousel-control-prev botonAnteriorCarrusel" type="button" data-bs-target="#carruselGasolina" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,6 +151,6 @@
         </div>
     </div>
     <div class="d-flex justify-content-center">
-        <span routerLink="/catalogo-completo" class="botonCatalogoCompleto">Ver el catalogo completo</span>
+        <span class="botonCatalogoCompleto">Ver el catalogo completo</span>
     </div>
 </section>
