@@ -84,7 +84,7 @@
 }
 
 .contenedorTexto{
-    padding-top: 10px;
+    padding-top: 0px;
     padding-left: 10px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .textoCarta{
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -102,8 +102,25 @@
 }
 
 .contenedorCarta img{
-    height: 350px;
-    width: 430px;
+    height: 400px;
+    width: 480px;
     background-size: cover;
     padding:0 5px;
+}
+
+.tituloTextoCarta{
+    font-size: 34px;
+}
+
+.botonEstoyInteresado{
+    font-size: 28px;
+    background-color: var(--color-azul-claro);
+    width: 75%;
+    border: 2px solid var(--color-azul-principal);
+}
+
+.botonEstoyInteresado:hover{
+    cursor: pointer;
+    background-color: rgb(55, 55, 207);
+    transition: all 0.5s;
 }
