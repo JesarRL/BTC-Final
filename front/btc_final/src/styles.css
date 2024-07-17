@@ -1,17 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-  --color-background-body: background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(83,83,83,1) 100%);;
-  --color-azul-principal: #000d72;
-  --color-azul-oscuro: #000B59;
-  --color-gris-oscuro: #1D1D1D;
-  --color-gris-claro: #3f3f3f;
-  --color-texto-prueba: #fff;
-  --color-azul-claro: rgb(92, 127, 255);
-  --color-gris-carta: rgb(67, 67, 67);
+:root {
+    --color-background-body: background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(83, 83, 83, 1) 100%);
+    ;
+    --color-azul-principal: #000d72;
+    --color-azul-oscuro: #000B59;
+    --color-gris-oscuro: #31363B;
+    --color-gris-claro: #3f3f3f;
+    --color-texto-prueba: #fff;
+    --color-azul-claro: rgb(92, 127, 255);
+    --color-gris-carta: rgb(67, 67, 67);
+    --nuevo-color-fondo: #31363B
+
 }
 
+body {
+    background-color: var(--color-gris-oscuro) !important;
+}
 
-body{
-  background-color: var(--color-gris-oscuro) !important;
+.arregloNav{
+    width: 1519.2px;
+    height: 100.4px;
+    background-color: var(--color-gris-oscuro);
 }

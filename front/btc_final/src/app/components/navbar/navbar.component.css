@@ -1,172 +1,166 @@
-
 /* Navbar */
 
-.navbar{
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--color-azul-principal);
-  padding: 10px 0 10px 0;
+.navbar {
+    width: 100%;
+    background-color: rgba(49, 54, 59, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid var(--color-azul-principal);
+    padding: 10px 0 10px 0;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    position: fixed;
 }
 
-.imagen-nav{
-  height: 50px;
-  opacity: 100%;
+.imagen-nav {
+    height: 50px;
+    opacity: 100%;
 }
 
 /* Navbar links */
 .navbar-css a {
-  float: left;
-  display: block;
-  color: var(--color-logo);
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+    float: left;
+    display: block;
+    color: var(--color-logo);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 }
 
-.navbar-css i{
-  opacity: 100%;
-  color: white;
+.navbar-css i {
+    opacity: 100%;
+    color: white;
 }
 
-.sticky {
-  position:fixed !important;
-  top: 0;
-  width: 100%;
-}
 
-.sticky + .content {
-  padding-top: 30px;
-}
+
 
 /** Side bar Menu desplegable **/
 
-.boton-menu-barras{
-  color: white;
-  font-size: 35px;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  padding: 5px 7px;
+.boton-menu-barras {
+    color: white;
+    font-size: 35px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px 7px;
 }
 
 
 
-.boton-menu-barras:hover{
+.boton-menu-barras:hover {
     border: 2px solid #fff;
     transition: all 0.5s;
-  }
-
-.despliegue-menu{
-  background-color: var(--color-gris-oscuro);
-  height: 100vh;
 }
 
-.despliegue-menu button{
-  margin-top: 60px;
-  margin-left: 60px;
+.despliegue-menu {
+    background-color: var(--color-gris-oscuro);
+    height: 100vh;
 }
 
-.despliegue-menu ul{
-  height: 100%;
-  margin-top: 25px;
-  margin-bottom: 70px;
+.despliegue-menu button {
+    margin-top: 60px;
+    margin-left: 60px;
 }
 
-.despliegue-menu li{
-  font-size: 26px;
-  list-style-type: none;
-  color: var(--color-logo);
+.despliegue-menu ul {
+    height: 100%;
+    margin-top: 25px;
+    margin-bottom: 70px;
 }
 
-.menu-catalogo{
-  border-radius: 10px;
-  border: 2.5px transparent solid;
+.despliegue-menu li {
+    font-size: 26px;
+    list-style-type: none;
+    color: var(--color-logo);
 }
 
-.menu-catalogo:hover{
-  background-color: transparent;
-  transition: all 0.5s;
-  border:  solid var(--color-azul-principal);
+.menu-catalogo {
+    border-radius: 10px;
+    border: 2.5px transparent solid;
+}
+
+.menu-catalogo:hover {
+    background-color: transparent;
+    transition: all 0.5s;
+    border: solid var(--color-azul-principal);
 }
 
 
-.clase-catalogo{
-  border-radius: 10px;
+.clase-catalogo {
+    border-radius: 10px;
 }
 
-.clase-catalogo:hover{
-  background-color: var(--color-oscuro-hover);
+.clase-catalogo:hover {
+    background-color: var(--color-oscuro-hover);
 }
 
-.despliegue-menu .clase-catalogo .clase-catalogo1 .desplegable-secundario{
-  width: 85%;
-  border-radius: 0px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+.despliegue-menu .clase-catalogo .clase-catalogo1 .desplegable-secundario {
+    width: 85%;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.despliegue-menu .clase-catalogo .clase-catalogo2 .desplegable-secundario{
-  height: 100%;
-  width: 15%;
-  border-radius: 0px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+.despliegue-menu .clase-catalogo .clase-catalogo2 .desplegable-secundario {
+    height: 100%;
+    width: 15%;
+    border-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.clase-catalogo i{
-  font-size: 30px;
-  padding-left: 13px;
-  color: var(--color-logo);
+.clase-catalogo i {
+    font-size: 30px;
+    padding-left: 13px;
+    color: var(--color-logo);
 }
 
-.despliegue-menu .clase-catalogo .clase-catalogo2:hover{
-  background-color: var(--color-logo);
-  transition: all 0.5s;
+.despliegue-menu .clase-catalogo .clase-catalogo2:hover {
+    background-color: var(--color-logo);
+    transition: all 0.5s;
 
 }
 
-.clase-catalogo2:hover i{
-  color: var(--color-oscuro-hover);
-  transition: all 0.5s;
+.clase-catalogo2:hover i {
+    color: var(--color-oscuro-hover);
+    transition: all 0.5s;
 }
 
-.despliegue-menu a{
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 10px 0;
-  border: 2.5px transparent solid;
+.despliegue-menu a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    border: 2.5px transparent solid;
 }
 
-.despliegue-menu a:hover{
-  background-color: transparent;
-  border: 2.5px white solid;
-  transition: all 0.5s;
+.despliegue-menu a:hover {
+    background-color: transparent;
+    border: 2.5px white solid;
+    transition: all 0.5s;
 }
 
-.boton-cerrar-menu{
-  margin: 39px 0 0 43px ;
-  font-size: 40px;
-  padding: 0px 10px;
-  color: white;
-  border: 2.5px solid transparent;
-  border-radius: 10px;
-  max-width: 13.2%;
+.boton-cerrar-menu {
+    margin: 39px 0 0 43px;
+    font-size: 40px;
+    padding: 0px 10px;
+    color: white;
+    border: 2.5px solid transparent;
+    border-radius: 10px;
+    max-width: 13.2%;
 }
 
-.boton-cerrar-menu:hover{
-  background-color: transparent;
-  border: 2.5px solid white;
-  transition: all 0.5s;
-  cursor: pointer;
+.boton-cerrar-menu:hover {
+    background-color: transparent;
+    border: 2.5px solid white;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 /** Side bar inicio de sesion **/
 
-.despliegue-usuario{
+.despliegue-usuario {
     background-color: var(--color-gris-oscuro);
 }
 
-.boton-inicio-sesion{
+.boton-inicio-sesion {
     color: var(--color-logo);
     font-size: 35px;
     border: 2px solid transparent;
@@ -174,18 +168,18 @@
     padding: 5px 7px;
 }
 
-.boton-inicio-sesion:hover{
+.boton-inicio-sesion:hover {
     border: 2px solid #fff;
     transition: all 0.5s;
 }
 
 
-.contenedor-login{
+.contenedor-login {
     display: flex;
     justify-content: end;
 }
 
-.boton-cerrar-login{
+.boton-cerrar-login {
     font-size: 40px;
     margin: 43px 60px 0 0;
     padding: 0px 10px;
@@ -196,21 +190,22 @@
     border: 2.5px solid transparent;
 }
 
-.boton-cerrar-login:hover{
+.boton-cerrar-login:hover {
     background-color: transparent;
     border: 2.5px solid var(--color-azul-principal);
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.imagen-nav-login{
+.imagen-nav-login {
     height: 80px;
 }
-.contenedor-inputs{
+
+.contenedor-inputs {
     font-size: 25px;
 }
 
-.contenedor-inputs input{
+.contenedor-inputs input {
     background-color: transparent;
     border: none;
     color: var(--color-logo);
@@ -218,66 +213,72 @@
 }
 
 .input1::after {
-    content: ''; /* Pseudo-elemento para crear la línea */
+    content: '';
+    /* Pseudo-elemento para crear la línea */
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #ffffff; /* Color de la línea */
-    margin-top: 3px; /* Desplazar la línea hacia abajo */
+    background-color: #ffffff;
+    /* Color de la línea */
+    margin-top: 3px;
+    /* Desplazar la línea hacia abajo */
 }
 
 .input2::after {
-    content: ''; /* Pseudo-elemento para crear la línea */
+    content: '';
+    /* Pseudo-elemento para crear la línea */
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #ffffff; /* Color de la línea */
-    margin-top: 3px; /* Desplazar la línea hacia abajo */
+    background-color: #ffffff;
+    /* Color de la línea */
+    margin-top: 3px;
+    /* Desplazar la línea hacia abajo */
 }
 
-.contenedor-inputs input::placeholder{
+.contenedor-inputs input::placeholder {
     color: var(--color-logo);
     border: none;
 }
 
-.contenedor-inputs input:focus{
+.contenedor-inputs input:focus {
     outline: none;
     background-color: var(--color-gris-claro);
     transition: all 0.5s;
 }
 
-.div-check{
+.div-check {
     color: var(--color-logo);
 
 }
 
-.div-checkbox{
+.div-checkbox {
     margin-bottom: 4.5px;
 }
 
-.div-checkbox label{
+.div-checkbox label {
     font-size: 19px;
 }
 
-.check{
+.check {
     transform: scale(1.3) translateX(2px);
 
 }
 
-.div-olvidaste-clave a{
+.div-olvidaste-clave a {
     text-decoration: none;
     color: var(--color-logo);
     border-bottom: solid 1px transparent;
 
 }
 
-.div-olvidaste-clave a:hover{
+.div-olvidaste-clave a:hover {
     border-bottom: solid 1px var(--color-logo);
     transition: all 0.5s;
 
 }
 
-.boton-login{
+.boton-login {
     background-color: var(--color-azul-principal);
     width: 80.5%;
     border: solid 1px var(--color-logo);
@@ -285,13 +286,13 @@
     border-radius: 10px;
 }
 
-.boton-login:hover{
+.boton-login:hover {
     border: 1px solid var(--color-logo);
     background-color: var(--color-azul-oscuro);
     transition: all 0.5s;
 }
 
-.boton-registro{
+.boton-registro {
     color: var(--color-azul-principal);
     background-color: var(--color-logo);
     width: 80.5%;
@@ -301,7 +302,7 @@
     text-align: center
 }
 
-.boton-registro:hover{
+.boton-registro:hover {
     border: 1px solid var(--color-logo);
     color: var(--color-logo);
     background-color: var(--color-azul-oscuro);

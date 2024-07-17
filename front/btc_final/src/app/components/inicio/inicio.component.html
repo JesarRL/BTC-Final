@@ -1,58 +1,24 @@
-<section class="container mt-0">
-    <div id="carouselExampleCaptions" class="d-flex carousel slide justify-content-center align-items-center"
-        data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+<section class="mt-0">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/Img/nomas-de-parqueaderos-de-visitantes.jpg" class="w-100" alt="Lightning">
-                <div class="carousel-caption d-none d-md-block ">
-                    <h3 class="text-white textoInicio bordered-text1"> Quieres comprar tu auto y no sabes cual?, Permitenos asesorarte con
-                        nuestro amplio
-                        catalogo
-                        de modelos</h3>
-                    <a routerLink="/catalogo" routerLinkActive="router-link-active" class="text-decoration-none  boton1">
-                        Investigar -> </a>
-                </div>
+            <div class="carousel-item active" data-bs-interval="30000">
+                <img src="/Img/nuevasImagenes/carrusel1prueba.jpg" class="imagen-carrusel1">
             </div>
-            <div class="carousel-item">
-                <img src="/Img/istockphoto-1175730715-612x612.jpg" class="w-100" alt="Hilux-Diesel">
-                <div class="carousel-caption d-none d-md-block ">
-                    <h3 class="text-white bordered-text2 textoInicio">Ya sabes que es lo que quieres, pero no tienes claro que modelo comprar?,
-                        compara sus
-                        caracteristicas en nuestro comparador</h3>
-                    <a routerLink="/comparativa" class="text-decoration-none  boton2">
-                        Comparar -> </a>
-                </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                2
             </div>
-            <div class="carousel-item">
-                <img src="/Img/Interrogation.jpg" class="w-100" alt="L200-gasolina">
-                <div class="carousel-caption d-none d-md-block ">
-                    <h3 class="text-white bordered-text3 textoInicio"> Necesitas ayuda personalizada, contactanos con tus dudas y con la inquietud
-                        con la que
-                        te
-                        podemos ayudar </h3>
-                    <a routerLink="/contacto" class="text-decoration-none  boton3"> Contactar ->
-                    </a>
-                </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                3
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev carruselBoton carruselBotonAnterior" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden"> Previous </span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
+        <button class="carousel-control-next carruselBoton carruselBotonSiguiente" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+    <button type="button" class="btn btn-warning">Warning</button>
 </section>
