@@ -1,14 +1,17 @@
 <section class="mt-0">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide carrusel" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="30000">
-                <img src="/Img/nuevasImagenes/carrusel1prueba.jpg" class="imagen-carrusel1">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="/Img/nuevasImagenes/carrusel1prueba.jpg" class="imagen-carrusel">
+                <button type="button" class="btn btn-warning boton1 fs-4 fw-medium" routerLink="/catalogo">Ir al catálogo</button>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                2
+                <img src="/Img/nuevasImagenes/carrusel2prueba.jpg" class="imagen-carrusel">
+                <button type="button" class="btn btn-primary boton2 fs-4 fw-medium" routerLink="/comparativa">Ir a la comparativa</button>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                3
+                <img src="/Img/nuevasImagenes/carrusel3prueba.jpg" class="imagen-carrusel">
+                <button type="button" class="btn btn-danger boton3 fs-4 fw-medium" routerLink="/contacto">Ir a contacto</button>
             </div>
         </div>
         <button class="carousel-control-prev carruselBoton carruselBotonAnterior" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -20,5 +23,5 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <button type="button" class="btn btn-warning">Warning</button>
+
 </section>

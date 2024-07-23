@@ -1,31 +1,49 @@
-*{
+body{
     overflow-x: hidden;
 }
 
-img{
-  height: 450px;
-  width: 200px;
+img {
+    height: 450px;
+    width: 200px;
 }
 
-h3{
-  text-decoration-color: white;
+h3 {
+    text-decoration-color: white;
 }
 
-.textoInicio{
+.textoInicio {
     background-color: rgba(53, 53, 53, 0.8);
 }
 
-.imagen-carrusel1{
+.imagen-carrusel{
     width: 1519.2px;
-    height: 702px;
+    height: 703px;
 }
 
-
-
-
-.carruselBoton{
+.carruselBoton {
     width: 8% !important;
 }
 
+.boton1 {
+    position: absolute;
+    top: 400px;
+    left: 130px;
+    width: 200px;
+    height: 65px;
+}
 
+.boton2{
+    position: absolute;
+    top: 445px;
+    left: 1127px;
+    width: 250px;
+    height: 65px;
+}
 
+.boton3{
+    position: absolute;
+    top: 445px;
+    left: 155px;
+    width: 250px;
+    height: 65px;
+}

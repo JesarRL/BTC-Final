@@ -11,7 +11,7 @@
 }
 
 .imagen-nav {
-    height: 50px;
+    height: 70px;
     opacity: 100%;
 }
 
@@ -21,7 +21,7 @@
     display: block;
     color: var(--color-logo);
     text-align: center;
-    padding: 14px;
+    padding: 10px 0;
     text-decoration: none;
 }
 

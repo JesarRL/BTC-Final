@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --color-background-body: background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(83, 83, 83, 1) 100%);
-    ;
+    --color-background-body: #31363B;
+
     --color-azul-principal: #000d72;
     --color-azul-oscuro: #000B59;
     --color-gris-oscuro: #31363B;
@@ -10,16 +9,16 @@
     --color-texto-prueba: #fff;
     --color-azul-claro: rgb(92, 127, 255);
     --color-gris-carta: rgb(67, 67, 67);
-    --nuevo-color-fondo: #31363B
+    --nuevo-color-fondo: #31363B;
 
 }
 
 body {
-    background-color: var(--color-gris-oscuro) !important;
+    background-color: var(--color-background-body) !important;
 }
 
 .arregloNav{
     width: 1519.2px;
-    height: 100.4px;
+    height: 112.4px;
     background-color: var(--color-gris-oscuro);
 }
