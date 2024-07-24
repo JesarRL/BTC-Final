@@ -18,7 +18,9 @@
 }
 
 .titulo-filtro{
-
+    font-size: 30px;
 }
 
-
+.elementos-filtro{
+    font-size: 22px;
+}
