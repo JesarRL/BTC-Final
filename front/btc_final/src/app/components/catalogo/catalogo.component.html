@@ -1,53 +1,134 @@
 <div class="arregloNav"></div>
 
-<section class="bg-danger">
+<section>
     <div class="cabecera">
-        <div class="cabecera-catalogo d-flex justify-content-center align-content-center">
+        <div class="cabecera-catalogo d-flex flex-column justify-content-center align-content-center text-center">
             <h1>Catálogo</h1>
+            <h2>Las mejores camionetas del mercado</h2>
         </div>
     </div>
     <div class="contenido">
         <div class="filtro d-flex flex-column px-4">
             <span class="titulo-filtro text-center fw-medium">Filtros:</span>
+
             <div class="d-flex flex-column">
-                <div>
-                    <i class="fa-solid fa-caret-right"></i><span class="elementos-filtro"> Combustible</span>
+                <div class="w-100 elemento-filtro">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <span class="elementos-filtro"> Combustible</span>
                     <div>
-                        <select>
-                            <option>Seleccione tipo de combustible</option>
-                            <option>Gasolina</option>
-                            <option>Diesel</option>
+                        <select class="w-100 elemento-select" id="selectCombustible">
+                            <option value="">Seleccione tipo de combustible</option>
+                            <option value="Gasolina">Gasolina</option>
+                            <option value="Diesel">Diesel</option>
                         </select>
                     </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-caret-right"></i><span class="elementos-filtro"> Marca</span>
+                <div class="w-100 elemento-filtro">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <span class="elementos-filtro"> Marca</span>
                     <div>
-                        <select>
-                            <option>xd</option>
-                            <option>xd</option>
+                        <select class="w-100 elemento-select" id="selectMarca">
+                            <option value="">Seleccione una marca</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="GMC">GMC</option>
+                            <option value="Ram">Ram</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Jeep">Jeep</option>
+                            <option value="Isuzu">Isuzu</option>
                         </select>
                     </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-caret-right"></i><span class="elementos-filtro"> Modelo</span>
+                <div class="w-100 elemento-filtro">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <span class="elementos-filtro"> Modelo</span>
                     <div>
-                        <select>
-                            <option>xd</option>
-                            <option>xd</option>
+                        <select class="w-100 elemento-select" id="selectModelo">
+                            <option value="">Seleccione el modelo</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
                         </select>
                     </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-caret-right"></i><span class="elementos-filtro"> Cilindrada (rango)</span>
+                <div class="w-100 elemento-filtro">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <span class="elementos-filtro"> Cilindrada (c.c)</span>
+                    <div class="d-flex justify-content-between align-items-center elemento-select">
+                        <span>Desde</span>
+                        <input type="number" class="inputFiltro" id="minCilindrada" />
+                        <span>-</span>
+                        <span>Hasta</span>
+                        <input type="number" class="inputFiltro" id="maxCilindrada" />
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-caret-right"></i><span class="elementos-filtro"> Precio</span>
+                <div class="w-100 elemento-filtro elemento-filtro-precio">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <span class="elementos-filtro"> Precio ($ USD)</span>
+                    <div class="d-flex justify-content-between align-items-center elemento-select">
+                        <span>Desde</span>
+                        <input type="number" class="inputFiltro" id="minPrecio" />
+                        <span>-</span>
+                        <span>Hasta</span>
+                        <input type="number" class="inputFiltro" id="maxPrecio" />
+                    </div>
+                </div>
+                <div class="w-100 elemento-filtro">
+                    <button class="w-100 btnBuscar" (click)="BucarFiltros()">Buscar</button>
+                </div>
+                <div class="w-100">
+                    <button class="w-100 btnLimpiar" (click)="filtrarCatalogo()">Limpiar filtros</button>
                 </div>
             </div>
         </div>
-        <div class="seccion-catalogo">
+        <div class="seccion-catalogo px-4">
+            <div class="contenedorImagenesCatalogo d-flex justify-content-evenly">
+                @for (item of catalogoFiltro; track item._id) {
+                    <div class="card cartaCatalogoCompleto" data-bs-toggle="modal" [attr.data-bs-target]="'#modal-' + item._id">
+                        <img src="{{ item.imagen }}" />
 
+                        <div class="card-body d-flex flex-column align-items-evenly cartaInterna">
+                            <h5 class="card-title fs-3 elemento-de-carta">{{ item.marca }} {{ item.modelo }}</h5>
+                            <p class="d-flex fs-5 elemento-de-carta">{{ item.year }} | {{ item.combustible }}</p>
+                            <p class="fs-4 elemento-de-carta">{{ item.precio }}$ USD</p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-{{ item._id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content contenidoModal">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Best Trucks Colombia</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body modalCatalogo d-flex align-items-center">
+                                    <div>
+                                        <img src="{{ item.imagen }}">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between pt-1 ms-4">
+                                        <h2 class="text-white fs-1">{{ item.marca }} {{ item.modelo }}</h2>
+                                        <p class="textoModal"><span class="fw-medium">Modelo:</span> {{ item.year }}</p>
+                                        <p class="textoModal"><span class="fw-medium">Combustible:</span> {{ item.combustible }}</p>
+                                        <p class="textoModal"><span class="fw-medium">Cilindrada:</span> {{ item.cilindrada }} c.c</p>
+                                        <p class="textoModal"><span class="fw-medium">Potencia - Torque:</span> {{ item.potencia }} hp - {{ item.torque }} Nm</p>
+                                        <p class="textoModal"><span class="fw-medium">Valvulas:</span> {{ item.valvulas }}</p>
+                                        <p class="textoModal"><span class="fw-medium">Consumo promedio:</span> {{ item.consumo_promedio }} L/100Km</p>
+                                        <p class="textoModal"><span class="fw-medium">Dimensiones:</span> {{ item.dimensiones }} (mm)</p>
+                                        <p class="textoModal"><span class="fw-medium">Precio:</span> {{ item.precio }}$ USD</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-secondary fs-4" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary fs-4"  data-bs-dismiss="modal" routerLink="/contacto">Estoy interesado!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </section>

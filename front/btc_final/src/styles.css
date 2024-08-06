@@ -2,19 +2,20 @@
 :root {
     --color-background-body: #31363B;
 
-    --color-azul-principal: #000d72;
+    --color-azul-principal: #090c9b;
     --color-azul-oscuro: #000B59;
     --color-gris-oscuro: #31363B;
     --color-gris-claro: #3f3f3f;
     --color-texto-prueba: #fff;
-    --color-azul-claro: rgb(92, 127, 255);
+    --color-azul-claro: #3066be;
     --color-gris-carta: rgb(67, 67, 67);
-    --nuevo-color-fondo: #31363B;
+
 
 }
 
 body {
-    background-color: var(--color-background-body) !important;
+
+    background: linear-gradient(180deg, rgba(49,54,59,1) 0%, rgba(26,27,28,1) 100%) ;
 }
 
 .arregloNav{

@@ -4,7 +4,7 @@
     width: 100%;
     background-color: rgba(49, 54, 59, 0.6);
     backdrop-filter: blur(10px);
-    border-bottom: 3px solid var(--color-azul-principal);
+    border-bottom: 4px solid var(--color-azul-principal);
     padding: 10px 0 10px 0;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     position: fixed;

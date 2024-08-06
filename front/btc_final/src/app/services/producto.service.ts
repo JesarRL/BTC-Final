@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProductoService {
 
-    UrlApi: string = "http://18.118.82.60:3000/best-trucks-colombia"
+    UrlApi: string = "http://localhost:3000/best-trucks-colombia"
 
     constructor(private http: HttpClient) { }
 
